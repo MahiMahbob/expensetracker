@@ -39,7 +39,7 @@ const FormContainer = () => {
   const handleInputChange = (e) => {
     changeInput(e.target.value, e.target.name);
   };
-  const btn = isEdit ? 'save' : 'Add Transactions'
+  const btn = isEdit ? 'save' : 'Add Transaction'
   return (
     <form onSubmit={handleSubmit}>
       <div className="form-control">
