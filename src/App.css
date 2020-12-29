@@ -130,7 +130,7 @@ input[type="number"]::-webkit-inner-spin-button {
   list-style-type: none;
   padding: 0;
   margin-bottom: 10px;
-  max-height: 90px;
+  height: 56px;
   overflow: hidden;
   overflow-x: hidden;
   overflow-y: auto;
@@ -143,8 +143,8 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 10px;
-  margin: 1px 1px 5px;
+  padding: 3px 10px;
+  margin: 1px;
 }
 .list li:last-child {
   margin-bottom: 1px;
@@ -159,32 +159,33 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .delete-btn {
   cursor: pointer;
-    background-color: darkslategray;
-    border: 0;
-    color: #fff;
-    padding: 2px 5px;
-    position: absolute;
-    right: 0;
-    transform: translate(-575%, 10%);
-    opacity: 0;
+  background-color: darkslategray;
+  border: 0;
+  color: #fff;
+  padding: 2px 5px;
+  position: absolute;
+  right: 0;
+  transform: translate(-575%, 10%);
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
-.edit-btn{
+.edit-btn {
   cursor: pointer;
-    border: 0;
-    border-radius: 3px;
-    background-color: brown;
-    color: #fff;
-    position: absolute;
-    right: 0;
-    transform: translate(-325%, 15%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  border: 0;
+  border-radius: 3px;
+  background-color: brown;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  transform: translate(-325%, 15%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.list li:hover .delete-btn, .list li:hover .edit-btn{
+.list li:hover .delete-btn,
+.list li:hover .edit-btn {
   opacity: 1;
 }
-.edit-btn:focus{
+.edit-btn:focus {
   outline: 0;
 }
 /* width */
@@ -204,16 +205,16 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .inc-exp-container {
     margin: 5px 0;
-}
-h3 {
-  padding-bottom: 8px;
-  margin: 11px 0 0;
-}
-.select {
-  margin-top: 11px;
-}
+  }
+  h3 {
+    padding-bottom: 8px;
+    margin: 11px 0 0;
+  }
+  .select {
+    margin-top: 11px;
+  }
 
-.btn {
-  margin: 10px 0 10px;
-}
+  .btn {
+    margin: 10px 0 10px;
+  }
 }
