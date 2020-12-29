@@ -15,7 +15,7 @@ function App() {
       <div className='container'>
         <Header />
         <IncomeContainer />
-        {transictions.length && <FilterContainer />}
+        {transictions.length > 0 && <FilterContainer />}
         <ListContainer />
         <h3>Add new transaction</h3>
         <FormContainer />
