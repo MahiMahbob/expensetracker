@@ -1,5 +1,5 @@
 import React from "react";
-import './app.css'
+import './App.css'
 import FilterContainer from "./components/FilterContainer";
 import FormContainer from "./components/FormContainer";
 import Header from "./components/Header";
