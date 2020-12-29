@@ -15,12 +15,12 @@ const FormContainer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isEdit) {
-      const newTran = {
+      const editTran = {
         text,
         amount: +amount,
         id: currentTrans.id
       };
-      editListing(newTran);
+      editListing(editTran);
     } else {
       if(text === '' & amount === '') {
         alert('Please add transaction value')

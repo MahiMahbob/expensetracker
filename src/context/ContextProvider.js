@@ -42,12 +42,14 @@ export const ContextProvider = ({ children }) => {
           });
     }
     
-    const editClick = (item) => {
-        dispatch({
-          type: 'EDIT_CLICK',
-          payload: item,
-        });
-      };
+    const handleEdit = (id) => {
+      const item = state.transictions.filter((tran) => tran.id === id);
+      const newItem = item[0];
+      dispatch({
+        type: 'EDIT_CLICK',
+        payload: newItem,
+      });
+    }
 
       const changeInput = (text, input) => {
         dispatch({
@@ -67,7 +69,7 @@ export const ContextProvider = ({ children }) => {
        deleteTransaction,
        fliterItemChange,
        change: state.change,
-       editClick,
+       handleEdit,
        editListing,
        changeInput,
        text: state.text,
