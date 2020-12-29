@@ -41,7 +41,7 @@ const FormContainer = () => {
   };
   const btn = isEdit ? 'save' : 'Add Transaction'
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} autocomplete="off">
       <div className="form-control">
         <label htmlFor="text">Transaction title</label>
         <input
