@@ -22,8 +22,8 @@ const FormContainer = () => {
       };
       editListing(editTran);
     } else {
-      if(text === '' & amount === '') {
-        alert('Please add transaction value')
+      if((text === '' || amount === '')) {
+        alert('Please add your transaction Title & Amount')
       }else {
         const newTran = {
           id: Math.floor(Math.random() * 700000),

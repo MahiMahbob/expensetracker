@@ -32,7 +32,7 @@ h1 {
 h2 {
   position: absolute;
   left: 0;
-  transform: rotate(90deg) translate(150%, 250%);
+  transform: rotate(90deg) translate(140%, 250%);
 }
 
 h3 {
@@ -210,7 +210,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   h2 {
-    transform: rotate(90deg) translate(215%, 250%);
+    transform: rotate(90deg) translate(190%, 250%);
   }
 
   h3 {
@@ -221,7 +221,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: 11px;
   }
   .list {
-    height: 58px;
+    max-height: 58px;
   }
   .list li {
     padding: 5px 10px;

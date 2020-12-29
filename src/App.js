@@ -15,8 +15,7 @@ function App() {
       <div className='container'>
         <Header />
         <IncomeContainer />
-        {transictions.length > 0 && <FilterContainer />}
-        <ListContainer />
+        {transictions.length > 0 ? (<FilterContainer />, <ListContainer />) : <h3>You have no transactions history</h3>}
         <h3>Add new transaction</h3>
         <FormContainer />
       </div>
