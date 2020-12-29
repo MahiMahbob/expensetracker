@@ -22,12 +22,17 @@ const FormContainer = () => {
       };
       editListing(newTran);
     } else {
-      const newTran = {
-        id: Math.floor(Math.random() * 700000),
-        text,
-        amount: +amount,
+      if(text === '' & amount === '') {
+        alert('Please add transaction value')
+      }else {
+        const newTran = {
+          id: Math.floor(Math.random() * 700000),
+          text,
+          amount: +amount,
+        }
+        addTransaction(newTran);
       }
-      addTransaction(newTran);
+      
     }
   };
 
