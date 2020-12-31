@@ -8,14 +8,14 @@ import ListContainer from "./components/ListContainer";
 import { useContextValue } from "./context/ContextProvider";
 
 function App() {
-  const { transictions} = useContextValue();
+  const { transictions } = useContextValue();
   return (
     <>
       <h2>Expense Tracker</h2>
       <div className='container'>
         <Header />
         <IncomeContainer />
-        {transictions.length > 0 ? (<FilterContainer />, <ListContainer />) : <h3>You have no transactions history</h3>}
+        {transictions.length > 0 ? (<><FilterContainer /> <ListContainer /> </>) : <h3>You have no transactions history</h3>}
         <h3>Add new transaction</h3>
         <FormContainer />
       </div>
