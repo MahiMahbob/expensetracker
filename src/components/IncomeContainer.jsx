@@ -6,8 +6,8 @@ const IncomeContainer = () => {
   const {transictions} = useContextValue()
 
   const amount = transictions.map(transiction => transiction.amount)
-  const income = amount.filter(plusAmount => plusAmount > 0).reduce((total,current) => total +=current ,0).toFixed(2)
-  const expense = (amount.filter(plusAmount => plusAmount < 0).reduce((total,current) => total +=current ,0) * -1).toFixed(2)
+  const income = amount.filter(plusAmount => plusAmount > 0).reduce((total,current) => total +=current ,0)
+  const expense = (amount.filter(plusAmount => plusAmount < 0).reduce((total,current) => total +=current ,0) * -1)
   
   return (
     <div className="inc-exp-container">

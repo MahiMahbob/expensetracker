@@ -4,7 +4,7 @@ import { useContextValue } from "../context/ContextProvider";
 const Header = () => {
   const {transictions} = useContextValue()
   const amount = transictions.map(transiction => transiction.amount)
-  const income = amount.reduce((total,current) => total += current,0).toFixed(2)
+  const income = amount.reduce((total,current) => total += current,0)
   return (
     <>
       <h4>Your Balance</h4>
